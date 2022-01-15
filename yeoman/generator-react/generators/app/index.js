@@ -53,13 +53,5 @@ module.exports = class extends Generator {
       pkgJson
     );
   }
-
-  install() {
-    this.spawnCommandSync("cd",[
-      this.destinationPath(this.answers.name)
-    ]);
-    this.spawnCommandSync("pwd",[
-
-    ]);
-  }
+  
 };
